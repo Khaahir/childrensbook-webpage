@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+}
+
+#header-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#title {
+    font-size: 3rem;
+    border: solid;
+}
+
+#main-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align the content to the top */
+}
+
+#books {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); /* Makes sure book covers are responsive */
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%; /* Ensures the grid fills the container */
+}
+
+.cover {
+    width: 15rem;
+    height: 20rem;
+    background-color: lightblue; 
+    border: solid black;
+    justify-self: center;
+}
+
